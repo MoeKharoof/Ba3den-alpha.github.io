@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <title>Ba3den - Shop and keep it ba3den</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/shop_style.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/lightbox.css">
+    <link rel="stylesheet" href="assets/css/cart.css">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon.ico">
+
+</head>
+
+<body>
+
+    <nav class="navbar nav_bar1 navbar-expand-lg bg-ba3den">
+        <div>
+            <img class = "logo" src="assets/images/teal-black.png">
+        </div>
+        <div class='search_wrap_grid'>
+                <form class="search_wrap">
+                    <div class="search">
+                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                        <button type="submit" class="searchButton">
+                            <i class="fa fa-search sb"></i>
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <ul class="nav_bar_items navbar-nav">
+                <li class="nav-item"><a>العربية</a></li>
+                <li class="nav-item"><a href="">Profile<i class="fa fa-user" aria-hidden="true"></i></a></li>
+                <li class="nav-item"><a href="">Cart<i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class = "banner">
+        <img src="./assets/images/16285.jpg">
+    </div>
+
+    <div class="content">
+        <div class="filter">
+            <h4>Filter</h4>
+            <hr class="filter-hr"> <!-- Rip bashar... -->
+            <h6>Category</h6>
+            <div class="col-12">
+                <div class="row">
+                    <button class="dropdown-btn cat-button">Furniture
+                        <p class="but" style="float:right">
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </button>
+                    <div class="dropdown-container checkboxgroup">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-9 subcat">
+                                    <a href="">Table</a>
+                                </div>
+                                <div class="col-3 subcat-count">
+                                    10
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 subcat">
+                                    <a href="">Bed</a>
+                                </div>
+                                <div class="col-3 subcat-count">
+                                    20
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 subcat">
+                                    <a href="">Desk</a>
+                                </div>
+                                <div class="col-3 subcat-count">
+                                    5
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <button class="dropdown-btn fash-button">Fashion
+                        <p class="but" style="float:right">
+                            <span></span>
+                            <span></span>
+                        </p>
+                    </button>
+                    <div class="dropdown-container checkboxgroup">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-9 subcat">
+                                    <a href="">Men</a>
+                                </div>
+                                <div class="col-3 subcat-count">
+                                    15
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 subcat">
+                                    <a href="">Dishwasher</a>
+                                </div>
+                                <div class="col-3 subcat-count">
+                                    18
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-9 subcat">
+                                    <a href="">Children</a>
+                                </div>
+                                <div class="col-3 subcat-count">
+                                    21
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="filter-hr">
+            <h6>Price (AED)</h6>
+            <div class="chuncked-slider">
+                <div class="slider">
+                    <div class="progress"></div>
+                </div>
+                <div class="range-input">
+                    <input type="range" class="range-min" min="0" max="5000" value="0" step="10">
+                    <input type="range" class="range-max" min="0" max="5000" value="5000" step="10">
+                </div>
+            </div>
+            <div class="price-input">
+                <div class="field">
+                    <input type="number" class="input-min" value="0" min="250" max="5000">
+                </div>
+                <div class="separator">-</div>
+                <div class="field">
+                    <input type="number" class="input-max" value="5000" min="250" max="5000">
+                </div>
+            </div>
+            <hr class="filter-hr">
+            <h6>Brand</h6>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="adidas" checked>
+                <label class="form-check-label" for="adidas">
+                    Adidas
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="nike" checked>
+                <label class="form-check-label" for="nike">
+                    Nike
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="puma" checked>
+                <label class="form-check-label" for="puma">
+                    Puma
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="puma" checked>
+                <label class="form-check-label" for="puma">
+                    IKEA
+                </label>
+            </div>
+            <hr class="filter-hr">
+            <button type="button" class="apply-btn">Apply Filters</button>
+        </div>
+        <div>
+            <div class="row">
+                Search results for "Item A"
+            </div>
+            <div class="row product_grid_container">
+                <div class="product_card">
+                    <img src='./assets/images/image 29.png'>
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/branaes-laundry-basket-with-lining-rattan__0388428_pe558509_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Basket</h4>
+                        <p>This is a basket hello hi how to do how are you todays</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src="https://www.ikea.com/ae/en/images/products/froesoen-duvholmen-seat-cushion-outdoor-beige__1066120_pe852297_s5.jpg?f=s">
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/froesoen-duvholmen-seat-cushion-outdoor-beige__1066121_pe852298_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Cushion</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                            massa facilisis, consectetur orci a, luctus eros.</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src="https://www.ikea.com/ae/en/images/products/lanespelare-ring-light-with-phone-holder__0971505_pe811368_s5.jpg?f=s">
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/lanespelare-ring-light-with-phone-holder__0971506_pe811367_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Lamp Phone Stand</h4>
+                        <p class="product_desc">Round LED Light + mobile phone holder in one! direct and adjust the
+                            phone stand for your captures</p>
+                        <div class="disc">
+                            <p class="discount"> 200 AED / month </p>
+                            <p class="discount_per">8% OFF!</p>
+                        </div>
+                        <h6>185 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src='https://www.ikea.com/ae/en/images/products/vinterkall-french-door-fridge-freezer-ikea-700-freestanding-stainless-steel__0958046_pe805209_s5.jpg?f=s'>
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/vinterkall-french-door-fridge-freezer-ikea-700-freestanding-stainless-steel__0958045_pe805208_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Fridge</h4>
+                        <p>Keep your food cold! Two cabinets and two drawers good for all your food!</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src='https://www.ikea.com/ae/en/images/products/foerenlig-plant-pot-in-outdoor-black__1093819_pe863207_s5.jpg?f=s'>
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/foerenlig-plant-pot-in-outdoor-white__0817560_pe774238_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Pot</h4>
+                        <p class="product_desc">Pot used for planting</p>
+                        <div class="disc">
+                            <p class="discount"> 200 AED / month </p>
+                            <p class="discount_per">25% OFF!</p>
+                        </div>
+                        <h6>150 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src="https://www.ikea.com/ae/en/images/products/chiafroen-plant-pot-white__0705516_pe725649_s5.jpg?f=s">
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/chiafroen-plant-pot-in-outdoor-light-green__1092053_pe862698_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Pot 2</h4>
+                        <p>Plant your greens!</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src="https://www.ikea.com/ae/en/images/products/vaniljstang-plant-stand-pine-black__0958912_pe809507_s5.jpg?f=s">
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/vaniljstang-plant-stand-pine-black__0958914_pe809509_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Pot Holder</h4>
+                        <p class="product_desc">Have multiple pots? Get this pot holder to store your favorite plants
+                        </p>
+                        <div class="disc">
+                            <p class="discount"> 200 AED / month </p>
+                            <p class="discount_per">8% OFF!</p>
+                        </div>
+                        <h6>185 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src='https://www.ikea.com/ae/en/images/products/gradvis-planter-in-outdoor-white__1093854_pe863243_s5.jpg?f=s'>
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/gradvis-planter-in-outdoor-grey__1010747_pe828363_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Long Bowl</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac massa facilisis,
+                            consectetur orci a, luctus eros. Vestibulum convallis faucibus vehicula. Aliquam ac congue
+                            quam, ut iaculis neque. Aenean facilisis dictum dolor, nec porttitor ipsum.</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src='https://www.ikea.com/ae/en/images/products/pluttis-wall-clock-black__1013114_pe829054_s5.jpg?f=s'>
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/pluttis-wall-clock-red__1013097_pe829051_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Clock</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac massa facilisis,
+                            consectetur orci a, luctus eros. Vestibulum convallis faucibus vehicula. Aliquam ac congue
+                            quam, ut iaculis neque. Aenean facilisis dictum dolor, nec porttitor ipsum.</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src="https://www.ikea.com/ae/en/images/products/tillreda-microwave-oven-white__0912596_pe783444_s5.jpg?f=s">
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/tillreda-microwave-oven-white__0913809_pe783752_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Microwave</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac massa facilisis,
+                            consectetur orci a, luctus eros. Vestibulum convallis faucibus vehicula. Aliquam ac congue
+                            quam, ut iaculis neque. Aenean facilisis dictum dolor, nec porttitor ipsum.</p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src="https://www.ikea.com/ae/en/images/products/tillreda-fridge-freestanding-white__0755806_pe748617_s5.jpg?f=s">
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/tillreda-fridge-freestanding-white__0434831_pe588568_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Mini Fridge</h4>
+                        <p class="product_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac
+                            massa facilisis, consectetur orci a, luctus eros. </p>
+                        <div class="disc">
+                            <p class="discount"> 200 AED / month </p>
+                            <p class="discount_per">8% OFF!</p>
+                        </div>
+                        <h6>185 AED / month</h6>
+                    </div>
+                </div>
+                <div class="product_card">
+                    <img
+                        src='https://www.ikea.com/ae/en/images/products/mataelskare-forced-air-oven-stainless-steel__0608096_pe683463_s5.jpg?f=s'>
+                    <div class="shop_flash">
+                        <img class="flash_img"
+                            src="https://www.ikea.com/ae/en/images/products/mataelskare-forced-air-oven-stainless-steel__0869529_pe670393_s5.jpg?f=s">
+                    </div>
+                    <div>
+                        <h4>Oven</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus ac massa facilisis,
+                            consectetur orci a, luctus eros. </p>
+                        <h6>200 AED / month</h6>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var dropdown = document.getElementsByClassName("dropdown-btn");
+        var i;
+
+        for (i = 0; i < dropdown.length; i++) {
+            dropdown[i].addEventListener("click", function () {
+                console.log("clicked");
+                this.classList.toggle("active");
+                var dropdownContent = this.nextElementSibling;
+                if (dropdownContent.style.display === "block") {
+                    dropdownContent.style.display = "none";
+                } else {
+                    dropdownContent.style.display = "block";
+                }
+            });
+        }
+    </script>
+    <script>
+        var icon_change = document.getElementsByClassName("cat-button");
+        var i;
+        var rotated = 0;
+        for (i = 0; i < icon_change.length; i++) {
+            icon_change[i].addEventListener("click", function () {
+                var linesContent = this.childNodes;
+                console.log(linesContent[1]);
+                var lines = linesContent[1].childNodes;
+                console.log(lines);
+                lines[1].style.transform = rotated ? 'rotate(0deg)' : 'rotate(90deg)';
+                lines[3].style.left = rotated ? '25%' : '50%';
+                lines[3].style.right = rotated ? '25%' : '50%';
+                rotated = rotated ? 0 : 1;
+            });
+        }
+    </script>
+    <script>
+        var icon_change1 = document.getElementsByClassName("fash-button");
+        var i1;
+        var rotated1 = 0;
+        for (i1 = 0; i1 < icon_change1.length; i1++) {
+            icon_change1[i1].addEventListener("click", function () {
+                var linesContent = this.childNodes;
+                console.log(linesContent[1]);
+                var lines = linesContent[1].childNodes;
+                console.log(lines);
+                lines[1].style.transform = rotated1 ? 'rotate(0deg)' : 'rotate(90deg)';
+                lines[3].style.left = rotated1 ? '25%' : '50%';
+                lines[3].style.right = rotated1 ? '25%' : '50%';
+                rotated1 = rotated1 ? 0 : 1;
+            });
+        }
+    </script>
+    <script src="assets/js/shop_script.js"></script>
+    <script src="assets/js/lightbox.js"></script>
+    <script src="assets/js/cart.js"></script>
+    <script src="assets/js/loading.js"></script>
+</body>

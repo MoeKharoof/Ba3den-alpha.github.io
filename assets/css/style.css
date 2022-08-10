@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaijaan+2:wght@500;600;700&family=Lora&family=Poppins:wght@500&family=Roboto&display=swap');
+@font-face {
+  font-family: dubai-font-light;
+  src: url(../fonts/DubaiW23-Light.woff);
+}
+
+@font-face {
+  font-family: dubai-font-medium;
+  src: url(../fonts/DubaiW23-Medium.woff);
+}
+
+@font-face {
+  font-family: dubai-font-bold;
+  src: url(../fonts/DubaiW23-Bold.woff);
+}
+
+.screen_cont {
+  background-color: #222831;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.logo {
+  position: fixed;
+  width: 20%;
+  margin: auto;
+  top:240px;
+}
+
+.logo-left{
+  left: 100px;
+}
+
+.logo-right{
+  right: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Baloo Bhaijaan 2', cursive;
+}
+
+h1{
+  font-size: 48px;
+  color: #FFFFFF;
+}
+h3{
+  font-size: 18px;
+  color: #7B49C7;
+}
+p{
+  font-size: 16px;
+}
+
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+}
+
+::selection {
+  color: #fff;
+  background: #664AFF;
+}
+
+.text_desc{
+  text-indent: 20px;
+}
+
+.bg_video{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: -1;
+}
+.bg_video video{
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+
+.bg_video:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.cont{
+  display: grid;
+  grid-template-columns: 50% 50%;
+  width: 95%;
+  margin-top: 240px;
+}
+
+.ba3den-word
+{
+  color: #75eef5;
+  font-size: 62px;
+}
+.right h1
+{
+  position: absolute;
+  right: 130px;
+}
+.left h1
+{
+  position: absolute;
+  left: 130px;
+}
+.bottom h2
+{
+  margin-top: 60px;
+  text-align: center;
+  color: white;
+  font-size: 26px;
+}
+a
+{
+  color: white;
+  text-decoration: none;
+}
+a:hover
+{
+  color: #75eef5;
+}
+.logo-right
+{
+  height: 100px; 
+  width: 384px;
+}
+
+/* SMARTPHONES PORTRAIT */
+@media only screen and (min-width: 300px) and (max-width: 679px){
+  .cont{
+    grid-template-columns: 100%;
+    margin-top: 0px;
+  }
+  .logo{
+    position: static;
+    width: 33% !important;
+  }
+  .logo-right{
+    height: auto;
+  }
+  .logo-left{
+    width: 35% !important;
+    margin-left: -10px;
+  }
+  .right{
+    margin-top: 160px;
+  }
+  h1{
+    font-size: 22px;
+  }
+  .left h1{
+    position: static;
+  }
+  .right h1{
+    position: static;
+  }
+  .ba3den-word{
+    font-size: 26px !important;
+  }
+  .bottom h2{
+    margin-top: 0px;
+    font-size: 18px !important;
+  }
+}
+
+/* Tablets */
+@media only screen and (min-width: 680px) and (max-width: 1023px) {
+  .cont{
+    grid-template-columns: 50% 50%;
+    margin-top: 0px;
+  }
+  .logo{
+    position: static;
+    width: 33% !important;
+  }
+  .logo-right{
+    height: auto;
+  }
+  .logo-right{
+    width: 35% !important;
+  }
+  h1{
+    font-size: 22px;
+  }
+  .left h1{
+    position: static;
+  }
+  
+  .right h1{
+    position: static;
+  }
+  .ba3den-word{
+    font-size: 26px !important;
+  }
+  .bottom h2{
+    margin-top: 0px;
+    font-size: 18px !important;
+  }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1500px){
+  .cont{
+    grid-template-columns: 50% 50%;
+    margin-top: 100px;
+  }
+  .logo{
+    position: static;
+    width: 33% !important;
+  }
+  .logo-right{
+    height: auto;
+  }
+  h1{
+    font-size: 32px;
+  }
+  .left h1{
+    position: static;
+  }
+  .right h1{
+    position: static;
+  }
+  .ba3den-word{
+    font-size: 26px !important;
+  }
+  .bottom h2{
+    margin-top: 0px;
+  }
+}
